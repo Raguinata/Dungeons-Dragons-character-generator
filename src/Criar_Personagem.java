@@ -13,7 +13,6 @@ public class Criar_Personagem {
         System.out.println("# Nome: " + nome + " #");
         System.out.println("# Raça: " + raca + " #");
         System.out.println("# Classe: " + classe + " #");
-        System.out.println("Obrigado!!!");
         
 
         sc.close();
