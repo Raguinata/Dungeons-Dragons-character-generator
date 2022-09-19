@@ -184,13 +184,34 @@ public class Complemento_Raca {
             break;
 
             case "Meio-Orc": 
-            String nomesMas [] = {"Dench", "Feng", "Gell", "Henk",
+            String nomesMasMeioOrc [] = {"Dench", "Feng", "Gell", "Henk",
                 "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump",
                 "Thokk"};
 
-                String nomesFem [] = {"Baggi", "Emen", "Engong", "Kansif",
+                String nomesFemMeioOrc [] = {"Baggi", "Emen", "Engong", "Kansif",
                     "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola",
                     "Volen", "Yevelda"};
+
+                if (genero == "Masculino") {
+                    int seletorNome = random.nextInt(nomesMasMeioOrc.length)+1;
+                    nome = nomesMasMeioOrc[seletorNome];
+                }
+
+                if (genero == "Feminino") {
+                    int seletorNome = random.nextInt(nomesFemMeioOrc.length)+1;
+                    nome = nomesFemMeioOrc[seletorNome];
+                }
+
+            break;
+
+            case "Tiefling":
+            String nomesMas [] = { "Akmenos", "Amnon",
+                "Barakas", "Damakos", "Ekemon", "Iados", "Kairon", "Leucis",
+                "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"};
+
+                String nomesFem [] = { "Akta", "Anakis", "Bryseis",
+                    "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria",
+                    "Nemeia", "Orianna", "Phelaia", "Rieta"};
 
                 if (genero == "Masculino") {
                     int seletorNome = random.nextInt(nomesMas.length)+1;
@@ -202,7 +223,7 @@ public class Complemento_Raca {
                     nome = nomesFem[seletorNome];
                 }
 
-            break;
+                break;
 
             }
 
