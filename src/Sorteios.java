@@ -24,45 +24,15 @@ public class Sorteios {
         Random random = new Random();
         int seletor = 0;
         String raca = " ";
+        String racasExistentes [] = {"Anão", "Elfo", "Halfling", "Humano", "Draconato", "Gnomo",
+        "Meio-Elfo", "Meio-Orc", "Tiefling"};
 
-        seletor = random.nextInt(9)+1;
+        seletor = random.nextInt(racasExistentes.length);
 
-        switch (seletor) {
-            case 1:
-                raca = "Anão";
-                break;
-
-            case 2:
-                raca = "Elfo";
-                break;
-
-            case 3:
-                raca = "Halfling";
-                break;
-
-            case 4:
-                raca = "Humano";
-                break;
-
-            case 5:
-                raca = "Draconato";
-                break;
-
-            case 6:
-                raca = "Gnomo";
-                break;
-
-            case 7:
-                raca = "Meio-Elfo";
-                break;
-
-            case 8:
-                raca = "Meio-Orc";
-                break;
-
-            case 9:
-                raca = "Tiefling";
-                break;
+        for (int i = 0; i < racasExistentes.length; i++) {
+            if (i == seletor) {
+                raca = racasExistentes[i];
+            }
         }
         return raca;
     }
@@ -70,60 +40,23 @@ public class Sorteios {
     public static String sorteioClasse () {
         Random random = new Random();
         int seletor = 0;
-        String raca = " ";
+        String classe = " ";
+        String classesExistentes [] = {"Bárbaro", "Bardo", "Bruxo", "Clérigo", "Druida", "Feiticeiro",
+        "Guerreiro", "Ladino", "Mago", "Monge","Paladino", "Patrulheiro"};
+        
 
-        seletor = random.nextInt(12)+1;
+        seletor = random.nextInt(classesExistentes.length);
 
-        switch (seletor) {
-            case 1:
-                raca = "Bárbaro";
-                break;
-
-            case 2:
-                raca = "Bardo";
-                break;
-
-            case 3:
-                raca = "Bruxo";
-                break;
-
-            case 4:
-                raca = "Clérigo";
-                break;
-
-            case 5:
-                raca = "Druida";
-                break;
-
-            case 6:
-                raca = "Feiticeiro";
-                break;
-
-            case 7:
-                raca = "Guerreiro";
-                break;
-
-            case 8:
-                raca = "Ladino";
-                break;
-
-            case 9:
-                raca = "Mago";
-                break;
-
-            case 10:
-                raca = "Monge";
-                break;
-
-            case 11:
-                raca = "Paladino";
-                break;
-
-            case 12:
-                raca = "Patrulheiro";
-                break;
-        }
-        return raca;
+        for (int i = 0; i < classesExistentes.length; i++) {
+            if (i == seletor) {
+                classe = classesExistentes[i];
+            } 
     }
+
+    return classe;
+}
+    // public static String etiniaHumano() {
+    //  return;
+    //}
 }
 
