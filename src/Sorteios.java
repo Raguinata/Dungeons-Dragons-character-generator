@@ -55,8 +55,22 @@ public class Sorteios {
 
     return classe;
 }
-    // public static String etiniaHumano() {
-    //  return;
-    //}
+
+    public static String sorteioEtniaHumano () {
+        Random random = new Random();
+        int seletor = 0;
+        String etnia = " ";
+        String etniasExistentes [] = {"Calishita", "Chondathano", "Damarano", "Illuskano", "Mulano",
+    "Rashemita", "Shou", "Tethyriano", "Turami"};
+        
+        seletor = random.nextInt(etniasExistentes.length);
+
+        for (int i = 0; i < etniasExistentes.length; i++) {
+            if (i == seletor) {
+                etnia = etniasExistentes[i];
+            }
+        }
+        return etnia;
+    }
 }
 

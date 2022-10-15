@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Complemento_Raca {
 
-    public static String sorteioNome (String raca, String genero) {
+    public static String sorteioNome (String raca, String genero, String etnia) {
         Random random = new Random();
         String nome = " ";
         
@@ -87,11 +87,15 @@ public class Complemento_Raca {
             break;
 
             case "Humano":
-                String nomesMasHumano [] = {};
 
-                String nomesFemHumano [] = {};
+            if (etnia == "Calishita") {
+                String nomesMasHumano [] = {"Aseir", "Bardeid", "Haseid",
+                    "Khemed", "Mehmen", "Sudeiman", "Zasheir"};
 
-                String sobrenomesHumano [] = {};
+                String nomesFemHumano [] = {"Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora",
+                    "Yasheira", "Zasheida"};
+
+                String sobrenomesHumano [] = {"Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein"};
 
                 if (genero == "Masculino") {
                     int seletorNome = random.nextInt(nomesMasHumano.length)+1;
@@ -104,6 +108,50 @@ public class Complemento_Raca {
                     int seletorSobre = random.nextInt(sobrenomesHumano.length)+1;
                     nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
                 }
+            }
+
+            else if (etnia == "Chondathano") {
+                String nomesMasHumano [] = {"Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn",
+                    "Randal", "Stedd"};
+
+                String nomesFemHumano [] = {"Arveene", "Esvele", "Jhessail", "Kerri", "Lureene", "Miri", "Rowan",
+                    "Shandri", "Tessele"};
+
+                String sobrenomesHumano [] = {"Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag"};
+
+                if (genero == "Masculino") {
+                    int seletorNome = random.nextInt(nomesMasHumano.length)+1;
+                    int seletorSobre = random.nextInt(sobrenomesHumano.length)+1;
+                    nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
+                }
+
+                if (genero == "Feminino") {
+                    int seletorNome = random.nextInt(nomesFemHumano.length)+1;
+                    int seletorSobre = random.nextInt(sobrenomesHumano.length)+1;
+                    nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
+                }
+            }
+
+            else if (etnia == "Damarano") {
+                String nomesMasHumano [] = {"Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival",
+                    "Orel", "Pavel", "Sergor"};
+
+                String nomesFemHumano [] = {"Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora"};
+
+                String sobrenomesHumano [] = {"Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag"};
+
+                if (genero == "Masculino") {
+                    int seletorNome = random.nextInt(nomesMasHumano.length)+1;
+                    int seletorSobre = random.nextInt(sobrenomesHumano.length)+1;
+                    nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
+                }
+
+                if (genero == "Feminino") {
+                    int seletorNome = random.nextInt(nomesFemHumano.length)+1;
+                    int seletorSobre = random.nextInt(sobrenomesHumano.length)+1;
+                    nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
+                }
+            }
 
             break;
 
@@ -230,44 +278,42 @@ public class Complemento_Raca {
         return nome;
     }
 
-    public static String nomeInfancia (String raca) {
+    public static String nomeInfancia(String raca) {
         Random random = new Random();
         String nome = " ";
 
         switch (raca) {
 
             case "Elfo":
-            String nomeInfElfo [] = {"Ara", "Bryn", "Del", "Eryn", "Faen", "Innil", "Lael",
-                "Mella", "Naill", "Naeris", "Phann", "Rael", "Rinn", "Sai", "Syllin",
-                "Thia", "Vall"};
+                String nomeInfElfo[] = { "Ara", "Bryn", "Del", "Eryn", "Faen", "Innil", "Lael",
+                        "Mella", "Naill", "Naeris", "Phann", "Rael", "Rinn", "Sai", "Syllin",
+                        "Thia", "Vall" };
 
-                int seletornome = random.nextInt(nomeInfElfo.length)+1;
+                int seletornome = random.nextInt(nomeInfElfo.length) + 1;
                 nome = "# Nome de Infância: " + nomeInfElfo[seletornome];
 
-            break;
+                break;
 
             case "Gnomo":
-            String apelidoGnomo [] = {"Beberrão", "Pó de Coração", "Texugo", "Manto",
-                "Tranca-Dupla", "Bate-Carteira", "Fnipper", "Ku", "Nim", "Um Sapato",
-                "Pústula", "Gema Faiscante", "Pato Desajeitado"};
+                String apelidoGnomo[] = { "Beberrão", "Pó de Coração", "Texugo", "Manto",
+                        "Tranca-Dupla", "Bate-Carteira", "Fnipper", "Ku", "Nim", "Um Sapato",
+                        "Pústula", "Gema Faiscante", "Pato Desajeitado" };
 
-                seletornome = random.nextInt(apelidoGnomo.length)+1;
-                nome = "# Apelido: "  + apelidoGnomo[seletornome];
+                seletornome = random.nextInt(apelidoGnomo.length) + 1;
+                nome = "# Apelido: " + apelidoGnomo[seletornome];
 
-            break;
+                break;
 
             case "Tiefling":
-            String nomeHonradoTiefling [] = {"Abertura", "Arte", "Carniça", "Canção",
-                "Crença", "Desespero", "Excelência", "Esperança", "Gloria",
-                "Ideal", "Ímpeto", "Música", "Nada", "Poesia", "Medo", "Missão",
-                "Penoso", "Reverencia", "Mágoa", "Temeridade", "Tormenta"};
+                String nomeHonradoTiefling[] = { "Abertura", "Arte", "Carniça", "Canção",
+                        "Crença", "Desespero", "Excelência", "Esperança", "Gloria",
+                        "Ideal", "Ímpeto", "Música", "Nada", "Poesia", "Medo", "Missão",
+                        "Penoso", "Reverencia", "Mágoa", "Temeridade", "Tormenta" };
 
-                seletornome = random.nextInt(nomeHonradoTiefling.length)+1;
+                seletornome = random.nextInt(nomeHonradoTiefling.length) + 1;
                 nome = "# Nome Honrado: " + nomeHonradoTiefling[seletornome];
-            break;
+                break;
         }
         return nome;
     }
 }
-
-
