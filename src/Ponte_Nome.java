@@ -30,7 +30,7 @@ public class Ponte_Nome {
             nome = Gnomo.nomeGnomo(genero);
         }
 
-        else if (raca == "Halfiling") {
+        else if (raca == "Halfling") {
             nome = Halfling.nomeHalfling(genero);
         }
 
@@ -46,7 +46,7 @@ public class Ponte_Nome {
             nome = Meio_Orc.nomeMeio_Orc(genero);
         }
 
-        else if (raca == "Tiefiling") {
+        else if (raca == "Tiefling") {
             nome = Tiefling.nomeTiefling(genero);
         }
         return nome;
@@ -63,7 +63,7 @@ public class Ponte_Nome {
             nomeInfancia = Gnomo.nomeInfanciaGnomo();
         }
 
-        else if (raca == "Tiefiling") {
+        else if (raca == "Tiefling") {
             nomeInfancia = Tiefling.nomeInfanciaTiefling();
         }
 

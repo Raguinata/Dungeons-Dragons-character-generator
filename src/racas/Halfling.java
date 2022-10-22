@@ -17,14 +17,14 @@ public class Halfling {
                 "Prato Cheio", "Folha de Chá", "Espinhudo", "Cinto Frouxo", "Galho Caído" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasHalf.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesHalf.length) + 1;
+            int seletorNome = random.nextInt(nomesMasHalf.length);
+            int seletorSobre = random.nextInt(sobrenomesHalf.length);
             nome = nomesMasHalf[seletorNome] + " " + sobrenomesHalf[seletorSobre];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemHalf.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesHalf.length) + 1;
+            int seletorNome = random.nextInt(nomesFemHalf.length);
+            int seletorSobre = random.nextInt(sobrenomesHalf.length);
             nome = nomesFemHalf[seletorNome] + " " + sobrenomesHalf[seletorSobre];
         }
         return nome;

@@ -17,12 +17,12 @@ public class Meio_Orc {
                 "Volen", "Yevelda" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasMeioOrc.length) + 1;
+            int seletorNome = random.nextInt(nomesMasMeioOrc.length);
             nome = nomesMasMeioOrc[seletorNome];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemMeioOrc.length) + 1;
+            int seletorNome = random.nextInt(nomesFemMeioOrc.length);
             nome = nomesFemMeioOrc[seletorNome];
         }
         return nome;

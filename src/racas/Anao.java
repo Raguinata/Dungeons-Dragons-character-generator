@@ -21,8 +21,8 @@ public class Anao {
                 "Torunn", "Ungart" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasAnao.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesAnao.length) + 1;
+            int seletorNome = random.nextInt(nomesMasAnao.length);
+            int seletorSobre = random.nextInt(sobrenomesAnao.length);
             nome = nomesMasAnao[seletorNome] + " " + sobrenomesAnao[seletorSobre];
         }
 

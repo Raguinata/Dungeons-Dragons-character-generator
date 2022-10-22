@@ -22,14 +22,14 @@ public class Gnomo {
                 "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasGnomo.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesGnomo.length) + 1;
+            int seletorNome = random.nextInt(nomesMasGnomo.length);
+            int seletorSobre = random.nextInt(sobrenomesGnomo.length);
             nome = nomesMasGnomo[seletorNome] + " " + sobrenomesGnomo[seletorSobre];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemGnomo.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesGnomo.length) + 1;
+            int seletorNome = random.nextInt(nomesFemGnomo.length);
+            int seletorSobre = random.nextInt(sobrenomesGnomo.length);
             nome = nomesFemGnomo[seletorNome] + " " + sobrenomesGnomo[seletorSobre];
         }
         return nome;
@@ -43,7 +43,7 @@ public class Gnomo {
                 "Tranca-Dupla", "Bate-Carteira", "Fnipper", "Ku", "Nim", "Um Sapato",
                 "Pústula", "Gema Faiscante", "Pato Desajeitado" };
 
-        int seletornome = random.nextInt(apelidoGnomo.length) + 1;
+        int seletornome = random.nextInt(apelidoGnomo.length);
         nome = "# Apelido: " + apelidoGnomo[seletornome];
         return nome;
     }

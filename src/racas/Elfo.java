@@ -22,14 +22,14 @@ public class Elfo {
                 "Ilphelkiir", "Liadon", "Meliamne", "Nailo", "Siannodel", "Xiloscient" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasElfo.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesElfo.length) + 1;
+            int seletorNome = random.nextInt(nomesMasElfo.length);
+            int seletorSobre = random.nextInt(sobrenomesElfo.length);
             nome = nomesMasElfo[seletorNome] + " " + sobrenomesElfo[seletorSobre];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemElfo.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesElfo.length) + 1;
+            int seletorNome = random.nextInt(nomesFemElfo.length);
+            int seletorSobre = random.nextInt(sobrenomesElfo.length);
             nome = nomesFemElfo[seletorNome] + " " + sobrenomesElfo[seletorSobre];
         }
         return nome;
@@ -43,7 +43,7 @@ public class Elfo {
                 "Mella", "Naill", "Naeris", "Phann", "Rael", "Rinn", "Sai", "Syllin",
                 "Thia", "Vall" };
 
-        int seletornome = random.nextInt(nomeInfElfo.length) + 1;
+        int seletornome = random.nextInt(nomeInfElfo.length);
         nome = "# Nome de Infância: " + nomeInfElfo[seletornome];
         return nome;
     }

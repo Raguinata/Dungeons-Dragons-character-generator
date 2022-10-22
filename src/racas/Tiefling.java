@@ -17,12 +17,12 @@ public class Tiefling {
                 "Nemeia", "Orianna", "Phelaia", "Rieta" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasTief.length) + 1;
+            int seletorNome = random.nextInt(nomesMasTief.length);
             nome = nomesMasTief[seletorNome];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemTief.length) + 1;
+            int seletorNome = random.nextInt(nomesFemTief.length);
             nome = nomesFemTief[seletorNome];
         }
         return nome;
@@ -37,7 +37,7 @@ public class Tiefling {
                 "Ideal", "Ímpeto", "Música", "Nada", "Poesia", "Medo", "Missão",
                 "Penoso", "Reverencia", "Mágoa", "Temeridade", "Tormenta" };
 
-        int seletornome = random.nextInt(nomeHonradoTiefling.length) + 1;
+        int seletornome = random.nextInt(nomeHonradoTiefling.length);
         nome = "# Nome Honrado: " + nomeHonradoTiefling[seletornome];
         return nome;
     }

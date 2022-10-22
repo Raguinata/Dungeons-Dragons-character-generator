@@ -17,14 +17,14 @@ public class Humano {
             String sobrenomesHumano[] = { "Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -39,14 +39,14 @@ public class Humano {
             String sobrenomesHumano[] = { "Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -61,14 +61,14 @@ public class Humano {
                     "Starag" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -84,14 +84,14 @@ public class Humano {
                     "Stormwind", "Windrivver" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -107,14 +107,14 @@ public class Humano {
                     "Sepret", "Uuthrakt" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -130,14 +130,14 @@ public class Humano {
                     "Ulmokina" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -152,14 +152,14 @@ public class Humano {
                     "Mei", "Pin", "Shin", "Sum", "Tan", "Wan" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -174,14 +174,14 @@ public class Humano {
             String sobrenomesHumano[] = { "Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }
@@ -197,14 +197,14 @@ public class Humano {
                     "Marivaldi", "Pisacar", "Ramondo" };
 
             if (genero == "Masculino") {
-                int seletorNome = random.nextInt(nomesMasHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesMasHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesMasHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
 
             if (genero == "Feminino") {
-                int seletorNome = random.nextInt(nomesFemHumano.length) + 1;
-                int seletorSobre = random.nextInt(sobrenomesHumano.length) + 1;
+                int seletorNome = random.nextInt(nomesFemHumano.length);
+                int seletorSobre = random.nextInt(sobrenomesHumano.length);
                 nome = nomesFemHumano[seletorNome] + " " + sobrenomesHumano[seletorSobre];
             }
         }

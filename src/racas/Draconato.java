@@ -20,14 +20,14 @@ public class Draconato {
                 "Verthisathurgiesh", "Yarjerit" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasDraco.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesDraco.length) + 1;
+            int seletorNome = random.nextInt(nomesMasDraco.length);
+            int seletorSobre = random.nextInt(sobrenomesDraco.length);
             nome = nomesMasDraco[seletorNome] + " " + sobrenomesDraco[seletorSobre];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemDraco.length) + 1;
-            int seletorSobre = random.nextInt(sobrenomesDraco.length) + 1;
+            int seletorNome = random.nextInt(nomesFemDraco.length);
+            int seletorSobre = random.nextInt(sobrenomesDraco.length);
             nome = nomesFemDraco[seletorNome] + " " + sobrenomesDraco[seletorSobre];
         }
         return nome;

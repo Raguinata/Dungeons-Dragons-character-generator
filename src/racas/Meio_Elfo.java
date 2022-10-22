@@ -19,13 +19,13 @@ public class Meio_Elfo {
                 "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia" };
 
         if (genero == "Masculino") {
-            int seletorNome = random.nextInt(nomesMasMeioElfo.length) + 1;
+            int seletorNome = random.nextInt(nomesMasMeioElfo.length);
             ;
             nome = nomesMasMeioElfo[seletorNome];
         }
 
         if (genero == "Feminino") {
-            int seletorNome = random.nextInt(nomesFemMeioElfo.length) + 1;
+            int seletorNome = random.nextInt(nomesFemMeioElfo.length);
             ;
             nome = nomesFemMeioElfo[seletorNome];
         }
