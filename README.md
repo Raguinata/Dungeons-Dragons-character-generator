@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://imgur.com/KFRULLP" alt="Imagem Projeto" />
+  <img src="https://imgur.com/KFRULLP.png" alt="Imagem Projeto" />
 </p>
 
 # Projeto de Geração de Personagens para RPG's no Sistema Dungens&Dragons (PGPRSDD)
