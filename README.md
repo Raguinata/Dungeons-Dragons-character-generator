@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://imgur.com/KFRULLP" alt="Imagem Projeto" />
+</p>
+
 # Projeto de Geração de Personagens para RPG's no Sistema Dungens&Dragons (PGPRSDD)
 
 Olá! É um prazer ajudá-lo a entender melhor esse projeto incrível chamado **PGPRSDD**. Trata-se de um programa especialmente desenvolvido para gerar personagens aleatórios para jogos de RPG que utilizam o sistema de Dungeons & Dragons. Se você é fã de jogos de fantasia, tenho certeza de que vai adorar essa ferramenta!
