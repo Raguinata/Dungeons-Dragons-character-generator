@@ -1,33 +1,46 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i < 20; i++) {
+        int qtdPersonagens;
+        StringBuilder mensagem = new StringBuilder();
 
-        String genero = Sorteios.sorteioGenero();
-        String raca = Sorteios.sorteioRaca();
-        String classe = Sorteios.sorteioClasse();
-        String etniaHumano = Sorteios.sorteioEtniaHumano();
-        String nome = Ponte_Nome.sorteioNome(raca, genero, etniaHumano);
+        qtdPersonagens = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual é a quantidade de personagens para criar?", "Qustionario", 3));
 
-        System.out.printf("##### PERSONAGEM #####\n");
-        System.out.println("# Gênero: " + genero);
-        System.out.println("# Nome: " + nome);
+        for (int i = 0; i < qtdPersonagens; i++) {
+            String genero = Sorteios.sorteioGenero();
+            String raca = Sorteios.sorteioRaca();
+            String classe = Sorteios.sorteioClasse();
+            String etniaHumano = Sorteios.sorteioEtniaHumano();
+            String nome = Ponte_Nome.sorteioNome(raca, genero, etniaHumano);
 
-        if (raca == "Elfo" || raca == "Gnomo" || raca == "Tiefling") {
-            System.out.println(Ponte_Nome.sorteioNomeInfancia(raca));
+            mensagem.append("##### PERSONAGEM #####\n");
+            mensagem.append("# Gênero: ").append(genero).append("\n");
+            mensagem.append("# Nome: ").append(nome).append("\n");
+
+            if (raca.equals("Elfo") || raca.equals("Gnomo") || raca.equals("Tiefling")) {
+                mensagem.append(Ponte_Nome.sorteioNomeInfancia(raca)).append("\n");
+            }
+
+            mensagem.append("# Raça: ").append(raca).append("\n");
+
+            if (raca.equals("Humano")) {
+                mensagem.append("# Etnia: ").append(etniaHumano).append("\n");
+            }
+
+            mensagem.append("# Classe: ").append(classe).append("\n\n");
         }
-        System.out.println("# Raça: " + raca);
 
-        if (raca == "Humano") {
-            System.out.println("# Etnia: " + etniaHumano);
-        }
-        System.out.println("# Classe: " + classe);
-        System.out.println();
-    }
+        JOptionPane.showMessageDialog(null, mensagem.toString(), "Personagens", JOptionPane.INFORMATION_MESSAGE);
+    
+
+    JOptionPane.showMessageDialog(null, "Obrigado por usar meu programa!!!\nGitHub: Raguinata", "final", 1);
 
         sc.close();
     }
 }
+
